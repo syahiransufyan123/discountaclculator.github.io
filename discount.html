@@ -15,7 +15,7 @@
     </nav>
   </header>
   <main> <h2>Shoe Types and Details</h2>
-    <table class="container-table">
+    <table class="container-table" id="shoe-table">
       <tr>
         <td>
           <table>
@@ -86,7 +86,7 @@
           <input type="tel" id="phoneNo" required>
         </li>
         <li>
-          <label for="membership">Membership:</label>
+          <label for="membership">Do you have membership:</label>
           <input type="radio" id="membershipYes" name="membership" value="yes" required>
           <label for="membershipYes" class="small-label">Yes</label>
           <input type="radio" id="membershipNo" name="membership" value="no" required>
@@ -104,23 +104,11 @@
         </li>
         <li>
           <label for="productid">Product ID:</label>
-          <select id="productid" class="input-field" required>
-            <option value="">Select Product ID</option>
-            <option value="SNK001">SNK001</option>
-            <option value="BT001">BT001</option>
-            <option value="SD001">SD001</option>
-            <option value="HH001">HH001</option>
-          </select>
+          <input type="text" id="productid" required>
         </li>
         <li>
           <label for="shoetype">Shoe Type:</label>
-          <select id="shoetype" class="input-field" required>
-            <option value="">Select Shoe Type</option>
-            <option value="sneakers">Sneakers</option>
-            <option value="boots">Boots</option>
-            <option value="sandals">Sandals</option>
-            <option value="highheels">High Heels</option>
-          </select>
+          <input type="text" id="shoetype" required>
         </li>
         
        
