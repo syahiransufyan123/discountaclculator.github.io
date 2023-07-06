@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: yellow;
+  background-color: rgb(249, 251, 252);
 }
 
 header {
@@ -95,32 +95,28 @@ form select {
   margin-left: 20px;
   padding: 20px;
   border: 2px solid gray;
-  background-color: rgb(248, 242, 242);
+  background-color: rgb(253, 253, 253);
   flex: 1;
   font-weight: bold;
   box-shadow: 0 0 5px #aaa;
 }
 
+
 .profile-info {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .profile-info img {
-  width: 100px;
-  height: auto;
-}
-
-.profile-text {
-  margin-left: 20px;
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 .profile-text p {
-  font-size: 14px;
-}
-
-.profile-text {
-  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -148,7 +144,7 @@ button:hover {
 
 .container-table th,
 .container-table td {
-  border: 1px solid black;
+  border: 1px solid ;
   padding: 8px;
 }
 
@@ -166,3 +162,12 @@ button:hover {
   margin-left: 5px;
 }
 
+.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

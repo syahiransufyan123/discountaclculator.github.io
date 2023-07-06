@@ -76,15 +76,7 @@
           <label for="name">Name:</label>
           <input type="text" id="name" required>
         </li>
-        <li>
-          <label for="email">Email:</label>
-          <input type="email" id="email" required>
-        
-        </li>
-        <li>
-          <label for="phoneNo">Phone Number:</label>
-          <input type="tel" id="phoneNo" required>
-        </li>
+       
         <li>
           <label for="membership">Do you have membership:</label>
           <input type="radio" id="membershipYes" name="membership" value="yes" required>
@@ -116,9 +108,17 @@
           <label for="price">Price:</label>
           <input type="number" id="price" required>
         </li>
+
+        <li>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" max="100" required>
+          <span id="error-message" class="error-message"></span>
+        </li>
+        
         <li>
           <label for="discount">Discount (%):</label>
-          <input type="number" id="discount" required>
+          <input type="range" id="discount" min="0" max="90" step="1" value="0" required>
+          <span id="discountValue">0%</span>
         </li>
         
         <li>
